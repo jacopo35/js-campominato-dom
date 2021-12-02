@@ -72,6 +72,10 @@ buttonPlay.addEventListener('click', function () {
             for (let index = 0; index < element.length; index++) {
                     element[index].classList.add('active-red');
             }
+             let stop = `
+                    <div class="stop"> 
+                    </div>`
+             grid.innerHTML += stop;
           let h4 = `
             <div class="lost"> 
             <h3>Cavolo hai perso...altra partita?</h3>
@@ -79,7 +83,7 @@ buttonPlay.addEventListener('click', function () {
             </div>`;
         setTimeout(function () {
                 grid.innerHTML += h4;
-                }, 800);
+                }, 1000);
             } else { 
                 this.classList.add('active');
             }
